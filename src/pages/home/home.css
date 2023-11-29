@@ -1,0 +1,127 @@
+.mainbodycon{
+    display: flex;
+}
+.sidecont{
+    display: flex;
+    flex: 1;
+    border: .5px  rgb(118, 117, 117);
+    box-shadow: 
+    3px 3px 5px rgba(0, 0, 0, 0.2), 
+    -3px -3px 5px rgba(0, 0, 0, 0.2);
+    background-color: cadetblue
+}
+.maincont{
+    display: flex;
+    flex-direction: column;
+    flex: 3; 
+    border: .5px  rgb(118, 117, 117);
+ 
+}
+
+@media (max-width: 767px) {
+    .mainbodycon {
+      flex-direction: column;
+    }
+  
+    .sidecont {
+      flex: none; 
+      width: 100%;
+    }
+  
+    .maincont {
+      flex: none; 
+      width: 100%;
+    }
+  }
+
+@media (max-width: 768px) {
+    .sidebar-closed .sidecont {
+      display: none;
+    }
+  
+    .sidebar-closed .maincont {
+      flex: 1;
+    }
+  }
+  
+  
+  /* For medium screens (768px to 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .mainbodycon {
+      flex-direction: column;
+    }
+  
+    .sidecont {
+      flex: none; /* Remove flex grow on medium screens */
+      width: 100%;
+    }
+  
+    .maincont {
+      flex: none; /* Remove flex grow on medium screens */
+      width: 100%;
+    }
+  }
+  
+  /* For large screens (992px and above) */
+  @media (min-width: 992px) {
+    .mainbodycon {
+      flex-direction: row;
+    }
+  
+    .sidecont {
+      flex: 1; /* Restore flex grow on large screens */
+      width: auto;
+    }
+  
+    .maincont {
+      flex: 3; /* Restore flex grow on large screens */
+      width: auto;
+    }
+  }
+  
+  /* Existing CSS for .mainbodycon, .sidecont, and .maincont remains unchanged */
+  .mainbodycon {
+    display: flex;
+  }
+  
+  .sidecont {
+    display: flex;
+    flex: 1;
+    border: .5px solid rgb(118, 117, 117);
+    box-shadow: 
+      3px 3px 5px rgba(0, 0, 0, 0.2), 
+      -3px -3px 5px rgba(0, 0, 0, 0.2);
+    background-color: cadetblue;
+  }
+  
+  .maincont {
+    display: flex;
+    flex-direction: column;
+    flex: 3; 
+    border: .5px solid rgb(118, 117, 117);
+  }
+  @media (min-width: 376px) and (max-width: 767px) {
+    .mainbodycon {
+        flex-direction: column;
+      }
+    
+      .sidecont {
+        flex: none;
+        width: 100%;
+        transition: width 0.3s ease;
+      }
+    
+      .maincont {
+        flex: none;
+        width: 100%;
+        transition: margin-left 0.3s ease;
+      }
+    
+      .sidebar-closed .sidecont {
+        width: 0;
+      }
+    
+      .sidebar-closed .maincont {
+        margin-left: 0;
+      }/* ... (same styles as in the previous example) ... */
+  }  

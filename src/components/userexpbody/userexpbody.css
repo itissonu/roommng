@@ -1,0 +1,122 @@
+.userexpbody{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+.expensecards{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 700px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+.topcard{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.status{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: rgb(98, 231, 144);
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+}
+.descspan{
+    margin-bottom :5px;
+    font-size: 15px;
+}
+.experdesc{
+    display: flex;
+    flex-direction: column;
+}
+.descspandetails{
+    border: .5px solid gray;
+    box-shadow: 0 1px 7px rgba(133, 128, 128, 0.2);
+    padding: 10px;
+    height: 50px;
+    border-radius: 5px;
+}
+.bootomcard{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.viewedImage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Set a higher z-index value */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .viewedImage img {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+  
+  .viewedImage button {
+    background-color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  button{
+    margin: 5px;
+  }
+  .editModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .editModal h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .editModal input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+   button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ 
+  
+  
