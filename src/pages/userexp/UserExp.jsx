@@ -7,7 +7,7 @@ import { Userexpbody } from '../../components/userexpbody/Userexpbody'
 export const UserExp = () => {
   return (
     <div className='userexpdiv'>
-      <Navbar/>
+      <Navbar/> 
       <Header/>
      
       
